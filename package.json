@@ -1,0 +1,31 @@
+{
+  "name": "@explorer/client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "watch": "watchify -t babelify -t sheetify/transform src/index.js -o bundle.js",
+    "build": "browserify -t babelify -t sheetify/transform src/index.js -o bundle.js",
+    "test": "standard && node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "choo": "^5.6.1",
+    "choo-log": "^6.1.2",
+    "microframe": "^1.0.0",
+    "sheetify": "^6.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-plugin-yo-yoify": "^0.6.0",
+    "babel-preset-env": "^1.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "dependency-check": "^2.9.1",
+    "standard": "^10.0.2",
+    "uglifyify": "^3.0.4"
+  }
+}

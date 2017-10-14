@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 1em;
+}
+
+.line {
+  display: block;
+  height: 15px;
+}
+
+.column {
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #ececec;
+}
+
+.active {
+  background-color: #1E8BC3;
+}
+
+.candy {
+  background-color: #F9690E;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reveal {
+  position: absolute;
+  background-color: rgba(108, 122, 137, 0.4);
+  text-align: center;
+  font-size: 40px;
+  color: #ECECEC;
+}
+
+.hidden {
+  display: none;
+}
